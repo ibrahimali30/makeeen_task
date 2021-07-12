@@ -73,6 +73,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun handleSuccess(data: List<ProductItem>) {
+        footerAdapter.setLoading(false)
         adapter.setList(data)
     }
 
